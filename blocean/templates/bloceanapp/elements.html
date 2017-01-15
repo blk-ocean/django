@@ -43,10 +43,11 @@
 		<div class="main">
 			<!-- NAVBAR -->
 			<div class="container-fluid">
-<form>
+<form action='/submitloungedata' method='POST'>
+	{% csrf_token %}
   <div class="form-group">
     <label for="exampleTextarea">Name</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter name" name="name">
     <small id="emailHelp" class="form-text text-muted">Enter the name of the lounge you want to add.</small>
   </div>
   <div class="form-group">
@@ -66,6 +67,10 @@
   <div class="form-group">
     <label for="exampleInputFile">Upload Image</label>
     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+    
+  </div>
+    <div class="form-group">
+    <input type="submit" class="form-control-file" id="submit button" aria-describedby="fileHelp">
     
   </div>
   <fieldset class="form-group">
