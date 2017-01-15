@@ -23,4 +23,7 @@ def lounge(request):
 def adminPanel(request):
 	return render(request,'bloceanapp/index.html')
 
+def submitLoungeData(request):
+	return HttpResponse(request.POST.get('name'))
+
 

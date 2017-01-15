@@ -12,4 +12,5 @@ urlpatterns = patterns('',
     url(r'^manage$','bloceanapp.views.adminPanel',name='adminpanel'),
     url(r'^ele_mnt$',TemplateView.as_view(template_name='bloceanapp/elements.html')),
     url(r'^$',TemplateView.as_view(template_name='bloceanapp/basic.html')),
+    url(r'^submitloungedata$','bloceanapp.views.submitLoungeData',name='loungedata'),
 )
