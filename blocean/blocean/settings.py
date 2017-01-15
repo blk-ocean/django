@@ -60,7 +60,8 @@ WSGI_APPLICATION = 'blocean.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+	#'NAME':'/django/blocean/db.sqlite3'
     }
 }
 TEMPLATE_PATH=os.path.join(BASE_DIR,'templates')#returns the relative path 
