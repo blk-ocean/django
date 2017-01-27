@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from bloceanapp.models import Lounge
 import json
 
+
 # Create your views here.
 
 
